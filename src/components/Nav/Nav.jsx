@@ -20,7 +20,7 @@ function Nav() {
   return (
     <div className="nav">
       <Link to="/home">
-        <h2 className="nav-title">Auth Shelf</h2>
+        <h2 className="nav-title">OMDb Movie Form</h2>
       </Link>
       <div>
         <Link className="navLink" to={loginLinkData.path}>
@@ -29,8 +29,11 @@ function Nav() {
 
         {user.id && (
           <>
-            <Link className="navLink" to="/shelf">
-              The Shelf
+            <Link className="navLink" to="/form">
+              Movie Form
+            </Link>
+            <Link className="navLink" to="/list">
+              Movie List
             </Link>
             <LogOutButton className="navLink" />
           </>
